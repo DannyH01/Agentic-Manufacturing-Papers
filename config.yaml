@@ -1,0 +1,331 @@
+scraper:
+  update_interval_days: 3
+  lookback_days: 7
+  max_results_per_query: 100
+  page_size: 50
+  request_delay_seconds: 3
+  request_timeout_seconds: 30
+  max_retries: 3
+  retry_backoff_seconds: 2
+  user_agent: "AgenticManufacturingPapers/1.0 (literature tracker; contact via repository issues)"
+
+display:
+  latest_papers: 25
+
+relevance:
+  minimum_score: 8
+  title_agentic_weight: 5
+  title_manufacturing_weight: 5
+  abstract_agentic_weight: 2
+  abstract_manufacturing_weight: 2
+  comments_agentic_weight: 1
+  comments_manufacturing_weight: 1
+  combined_domain_weight: 5
+  application_weight: 2
+
+keywords:
+  agentic:
+    - agentic AI
+    - agentic system
+    - agentic systems
+    - agentic framework
+    - agentic frameworks
+    - agentic workflow
+    - agentic workflows
+    - AI agent
+    - AI agents
+    - intelligent agent
+    - intelligent agents
+    - autonomous agent
+    - autonomous agents
+    - LLM agent
+    - LLM agents
+    - large language model agent
+    - large language model agents
+    - language model agent
+    - language model agents
+    - multi-agent
+    - multi agent
+    - multiagent
+    - tool-using agent
+    - tool using agent
+    - tool-augmented LLM
+    - tool augmented LLM
+    - tool-using language model
+    - autonomous AI
+    - AI copilot
+    - LLM copilot
+    - ReAct agent
+    - function calling agent
+    - reasoning agent
+    - planning agent
+    - AI scientist
+    - scientific agent
+    - autonomous experimentation
+    - self-driving laboratory
+  manufacturing:
+    - manufacturing
+    - smart manufacturing
+    - intelligent manufacturing
+    - advanced manufacturing
+    - digital manufacturing
+    - industrial manufacturing
+    - Industry 4.0
+    - Industry 5.0
+    - smart factory
+    - factory automation
+    - production system
+    - machining
+    - CNC
+    - machine tool
+    - milling
+    - turning
+    - grinding
+    - additive manufacturing
+    - laser powder bed fusion
+    - LPBF
+    - material extrusion
+    - 3D printing
+    - welding
+    - forming
+    - casting
+    - composites manufacturing
+    - robotic assembly
+    - industrial robotics
+    - manufacturing robotics
+    - process planning
+    - production planning
+    - production scheduling
+    - job shop scheduling
+    - job-shop scheduling
+    - process optimization
+    - process control
+    - adaptive manufacturing
+    - quality control
+    - quality assurance
+    - metrology
+    - predictive maintenance
+    - condition monitoring
+    - fault diagnosis
+    - machine diagnostics
+    - manufacturing digital twin
+    - machine tool digital twin
+    - CAD/CAM
+    - design for manufacturing
+    - manufacturing engineering
+  manufacturing_context:
+    - manufacturing
+    - smart factory
+    - factory automation
+    - industrial manufacturing
+    - intelligent manufacturing
+    - Industry 4.0
+    - Industry 5.0
+    - machining
+    - CNC
+    - machine tool
+    - milling
+    - turning
+    - grinding
+    - additive manufacturing
+    - laser powder bed fusion
+    - LPBF
+    - material extrusion
+    - 3D printing
+    - welding
+    - casting
+    - robotic assembly
+    - industrial robotics
+    - manufacturing robotics
+    - job shop
+    - job-shop
+    - manufacturing digital twin
+    - machine tool digital twin
+    - design for manufacturing
+    - manufacturing engineering
+    - materials synthesis
+    - materials processing
+  applications:
+    - process planning
+    - production planning
+    - production scheduling
+    - job shop scheduling
+    - process optimization
+    - process control
+    - parameter optimization
+    - quality control
+    - inspection
+    - metrology
+    - predictive maintenance
+    - fault diagnosis
+    - condition monitoring
+    - digital twin
+    - industrial robot
+    - robotic assembly
+    - CAD
+    - CAM
+  exclusions:
+    - chemical agent
+    - chemical agents
+    - biological agent
+    - biological agents
+    - economic agent
+    - economic agents
+
+query_families:
+  general_agentic_manufacturing: '((all:"agentic AI" OR all:"LLM agent" OR all:"multi-agent system" OR all:"autonomous agent" OR all:"tool-using agent" OR all:"agentic framework") AND (all:manufacturing OR all:"smart manufacturing" OR all:machining OR all:CNC OR all:"additive manufacturing" OR all:assembly OR all:"industrial robot" OR all:"production planning" OR all:"digital twin"))'
+  manufacturing_reasoning: '((all:"large language model" OR all:LLM OR all:"foundation model") AND (all:manufacturing OR all:machining OR all:production OR all:factory) AND (all:agent OR all:planning OR all:reasoning OR all:autonomous OR all:decision OR all:tool))'
+  multi_agent_manufacturing: '((all:"multi-agent" OR all:"multi agent" OR all:multiagent) AND (all:manufacturing OR all:production OR all:machining OR all:assembly OR all:factory))'
+  knowledge_agents: '((all:"knowledge graph" OR all:ontology OR all:RAG OR all:"retrieval augmented generation") AND (all:"LLM agent" OR all:"AI agent" OR all:"multi-agent" OR all:"large language model") AND (all:manufacturing OR all:machining OR all:production))'
+  digital_twins: '(all:"digital twin" AND (all:agent OR all:"large language model" OR all:LLM OR all:"multi-agent") AND (all:manufacturing OR all:factory OR all:machining))'
+  robotics: '((all:"LLM agent" OR all:"multi-agent" OR all:"vision language model" OR all:"agentic AI") AND (all:"industrial robot" OR all:"manufacturing robot" OR all:"robotic assembly" OR all:assembly OR all:"robotic manufacturing"))'
+  production_planning: '((all:LLM OR all:"LLM agent" OR all:"multi-agent" OR all:"agentic AI") AND (all:"production scheduling" OR all:"job shop scheduling" OR all:"process planning" OR all:"production planning"))'
+  process_optimization: '((all:LLM OR all:"LLM agent" OR all:"multi-agent" OR all:agentic) AND (all:"process optimization" OR all:"process control" OR all:"parameter optimization" OR all:"adaptive manufacturing"))'
+  quality_inspection: '((all:LLM OR all:agentic OR all:"LLM agent" OR all:"multi-agent") AND (all:inspection OR all:metrology OR all:"quality control" OR all:"quality assurance" OR all:defect) AND all:manufacturing)'
+  maintenance_diagnostics: '((all:LLM OR all:"LLM agent" OR all:"multi-agent" OR all:agentic) AND (all:"predictive maintenance" OR all:diagnosis OR all:"fault diagnosis" OR all:"condition monitoring") AND (all:manufacturing OR all:machine))'
+  human_ai: '((all:"human AI collaboration" OR all:"human-AI collaboration" OR all:copilot OR all:"operator assistant" OR all:"natural language interface") AND (all:manufacturing OR all:factory OR all:machining))'
+  scientific_discovery: '((all:"automated scientific discovery" OR all:"agentic scientific discovery" OR all:"AI scientist" OR all:"scientific agent" OR all:"autonomous experimentation" OR all:"self-driving laboratory" OR all:"hypothesis generation" OR all:"causal discovery" OR all:"symbolic regression" OR all:"equation discovery" OR all:"Bayesian experimental design") AND (all:manufacturing OR all:materials OR all:machining OR all:industrial))'
+
+category_field_weights:
+  title: 5
+  abstract: 2
+  comment: 1
+
+category_priority:
+  - production_planning_scheduling
+  - process_planning
+  - process_optimization_control
+  - monitoring_diagnostics_maintenance
+  - quality_inspection_metrology
+  - robotics_autonomous_manufacturing
+  - digital_twins_simulation
+  - knowledge_manufacturing_intelligence
+  - human_ai_collaboration
+  - design_manufacturing_engineering
+  - scientific_discovery
+  - agentic_frameworks
+
+categories:
+  agentic_frameworks:
+    title: Agentic Manufacturing Frameworks
+    file: agentic-frameworks.md
+    description: General-purpose agentic, autonomous, and multi-agent architectures for manufacturing.
+    keywords: [agentic framework, agentic manufacturing, autonomous manufacturing framework, multi-agent architecture, manufacturing agent, smart manufacturing system]
+  process_planning:
+    title: Process Planning & Decision Making
+    file: process-planning.md
+    description: Agents for process planning, operation selection, routing, and manufacturing decision support.
+    keywords: [process planning, operation planning, machining planning, process routing, parameter selection, decision support, engineering reasoning]
+  process_optimization_control:
+    title: Process Optimization & Control
+    file: process-optimization-control.md
+    description: Agentic process optimization, adaptive control, and autonomous process adjustment.
+    keywords: [process optimization, parameter optimization, process control, adaptive control, closed-loop, closed loop, autonomous process adjustment]
+  production_planning_scheduling:
+    title: Production Planning & Scheduling
+    file: production-planning-scheduling.md
+    description: Production planning, factory scheduling, resource allocation, and coordination agents.
+    keywords: [production planning, production scheduling, job shop, job-shop, factory scheduling, resource allocation, supply coordination]
+  monitoring_diagnostics_maintenance:
+    title: Monitoring, Diagnostics & Maintenance
+    file: monitoring-diagnostics-maintenance.md
+    description: Intelligent monitoring, fault diagnosis, root-cause analysis, and predictive maintenance.
+    keywords: [predictive maintenance, condition monitoring, fault diagnosis, root cause, root-cause, machine diagnostics, process monitoring, machine monitoring]
+  quality_inspection_metrology:
+    title: Quality, Inspection & Metrology
+    file: quality-inspection-metrology.md
+    description: Agentic quality assurance, inspection, defect analysis, and metrology.
+    keywords: [quality control, quality assurance, inspection, metrology, defect detection, defect analysis, dimensional inspection, manufacturing quality]
+  robotics_autonomous_manufacturing:
+    title: Robotics & Autonomous Manufacturing
+    file: robotics-autonomous-manufacturing.md
+    description: Industrial robotics, robotic assembly, manipulation, and autonomous manufacturing cells.
+    keywords: [industrial robot, manufacturing robot, robotic assembly, manipulation, robot planning, autonomous cell, human-robot collaboration]
+  digital_twins_simulation:
+    title: Digital Twins & Simulation
+    file: digital-twins-simulation.md
+    description: Manufacturing digital twins, agent-driven simulation, and virtual commissioning.
+    keywords: [digital twin, virtual manufacturing, virtual commissioning, simulation agent, agent-driven simulation, machine tool twin]
+  knowledge_manufacturing_intelligence:
+    title: Knowledge & Manufacturing Intelligence
+    file: knowledge-manufacturing-intelligence.md
+    description: Manufacturing knowledge graphs, ontologies, RAG systems, and domain assistants.
+    keywords: [knowledge graph, ontology, retrieval augmented, retrieval-augmented, RAG, knowledge agent, manufacturing knowledge, domain assistant]
+  human_ai_collaboration:
+    title: Human-AI Collaboration
+    file: human-ai-collaboration.md
+    description: Manufacturing copilots, operator assistants, and human-in-the-loop intelligent systems.
+    keywords: [human-AI, human AI, copilot, operator assistant, natural language interface, human-in-the-loop, engineer-AI]
+  design_manufacturing_engineering:
+    title: Design & Manufacturing Engineering
+    file: design-manufacturing-engineering.md
+    description: Agentic CAD/CAM, design-for-manufacturing, toolpath, and engineering workflows.
+    keywords: [CAD, CAM, CAD/CAM, design for manufacturing, DFM, toolpath, manufacturing design, engineering workflow]
+  scientific_discovery:
+    title: Scientific Discovery & Experimentation
+    file: scientific-discovery.md
+    description: Autonomous experimentation and scientific discovery methods relevant to manufacturing and materials.
+    keywords: [autonomous experimentation, scientific discovery, AI scientist, hypothesis generation, hypothesis testing, hypothesis falsification, causal discovery, symbolic regression, equation discovery, experimental design, self-driving laboratory]
+
+tags:
+  ai:
+    LLM: [large language model, LLM]
+    LLM-agent: [LLM agent, language model agent]
+    multi-agent: [multi-agent, multi agent, multiagent]
+    single-agent: [single-agent, single agent]
+    agentic-AI: [agentic AI, agentic system, agentic framework]
+    tool-use: [tool use, tool-use, tool using, tool-using, tool augmented, tool-augmented]
+    function-calling: [function calling, function-calling]
+    ReAct: [ReAct]
+    planning: [planning agent, agent planning]
+    reasoning: [reasoning agent, agent reasoning]
+    memory: [agent memory, memory module]
+    persistent-memory: [persistent memory, long-term memory]
+    RAG: [RAG, retrieval augmented, retrieval-augmented]
+    knowledge-graph: [knowledge graph]
+    ontology: [ontology, ontologies]
+    multimodal: [multimodal, multi-modal]
+    vision-language-model: [vision language model, vision-language model, VLM]
+    reinforcement-learning: [reinforcement learning]
+    digital-twin: [digital twin]
+    simulation: [simulation]
+    human-in-the-loop: [human-in-the-loop, human in the loop]
+  manufacturing:
+    manufacturing: [manufacturing]
+    smart-manufacturing: [smart manufacturing, intelligent manufacturing]
+    CNC: [CNC]
+    machining: [machining, machine tool]
+    milling: [milling]
+    turning: [turning]
+    grinding: [grinding]
+    additive-manufacturing: [additive manufacturing, 3D printing]
+    LPBF: [LPBF, laser powder bed fusion]
+    material-extrusion: [material extrusion]
+    welding: [welding]
+    assembly: [assembly]
+    robotics: [industrial robot, manufacturing robot, robotic]
+    production-planning: [production planning]
+    scheduling: [production scheduling, job shop, job-shop]
+    quality: [quality control, quality assurance]
+    inspection: [inspection, defect detection]
+    metrology: [metrology]
+    maintenance: [predictive maintenance, condition monitoring]
+    process-control: [process control, adaptive control]
+    process-optimization: [process optimization, parameter optimization]
+    digital-twin: [digital twin]
+    CAD: [CAD]
+    CAM: [CAM]
+  research:
+    decision-support: [decision support, decision-support]
+    optimization: [optimization]
+    planning: [planning]
+    scientific-discovery: [scientific discovery, AI scientist]
+    causal-discovery: [causal discovery]
+    causal-inference: [causal inference]
+    symbolic-regression: [symbolic regression]
+    equation-discovery: [equation discovery]
+    experimental-design: [experimental design]
+    uncertainty-quantification: [uncertainty quantification]
+    physics-informed: [physics-informed, physics informed]
+    system-identification: [system identification]
+    human-AI-collaboration: [human-AI collaboration, human AI collaboration, human-in-the-loop]

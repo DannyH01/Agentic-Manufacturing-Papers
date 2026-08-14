@@ -1,0 +1,58 @@
+name: Update papers
+
+on:
+  schedule:
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: Bypass the three-day update interval
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-agentic-manufacturing-papers
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest
+
+      - name: Update papers
+        if: github.event_name != 'workflow_dispatch' || inputs.force_update != true
+        run: python -m scraper.main
+
+      - name: Force update papers
+        if: github.event_name == 'workflow_dispatch' && inputs.force_update == true
+        run: python -m scraper.main --force
+
+      - name: Commit generated changes
+        run: |
+          if git diff --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md categories data/papers.json data/papers.csv data/state.json
+          git commit -m "chore: update agentic manufacturing papers"
+          git push
