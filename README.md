@@ -4,7 +4,7 @@ An automatically updated collection of research on agentic AI, LLM agents, multi
 
 This repository covers manufacturing copilots, digital twins, robotics, process and production planning, quality, maintenance, knowledge systems, engineering workflows, and related intelligent manufacturing systems. Inclusion and classification use automated keyword retrieval and deterministic relevance scoring, so occasional refinements may be needed.
 
-- Last updated: 2026-08-14T17:55:30Z
+- Last updated: 2026-08-14T18:10:20Z
 - Total papers: 1
 - New papers this update: 0
 - Updated papers this update: 0
