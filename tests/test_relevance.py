@@ -63,6 +63,53 @@ def test_automated_experimentation_without_agentic_ai_is_rejected():
     assert not accepted
 
 
+def test_general_manufacturing_agent_is_accepted():
+    accepted, score, matches = is_relevant(
+        paper(
+            "A General Manufacturing Agent for Factory Decision Support",
+            "The system supports production engineers across multiple manufacturing tasks.",
+        ),
+        CONFIG,
+    )
+    assert accepted
+    assert score >= CONFIG["relevance"]["minimum_score"]
+    assert "manufacturing agent" in [match.casefold() for match in matches]
+
+
+def test_llm_manufacturing_planning_without_agent_label_is_accepted():
+    accepted, score, _ = is_relevant(
+        paper(
+            "LLM-Based Decision Support for CNC Machining",
+            "A large language model performs operation planning and parameter selection for machine tools.",
+        ),
+        CONFIG,
+    )
+    assert accepted
+    assert score >= CONFIG["relevance"]["minimum_score"]
+
+
+def test_generic_agent_with_strong_factory_context_is_accepted():
+    accepted, _, _ = is_relevant(
+        paper(
+            "An Agent-Based Scheduling Method for Smart Factories",
+            "Agents allocate machine resources in a manufacturing production system.",
+        ),
+        CONFIG,
+    )
+    assert accepted
+
+
+def test_llm_without_action_capability_is_not_automatically_agentic():
+    accepted, _, _ = is_relevant(
+        paper(
+            "Large Language Models for Manufacturing Documents",
+            "We evaluate text similarity on a manufacturing document corpus.",
+        ),
+        CONFIG,
+    )
+    assert not accepted
+
+
 def test_title_matches_are_weighted_more_than_abstract_only_matches():
     title_score, _ = score_relevance(
         paper("LLM Agent for Manufacturing", "We present a benchmark."), CONFIG

@@ -61,6 +61,54 @@ keywords:
     - planning agent
     - AI scientist
     - scientific agent
+    - agent for manufacturing
+    - agents for manufacturing
+    - manufacturing agent
+    - manufacturing agents
+    - factory agent
+    - factory agents
+    - industrial AI agent
+    - industrial AI agents
+    - agent-based manufacturing
+    - agent based manufacturing
+  ai_models:
+    - large language model
+    - large language models
+    - LLM
+    - LLMs
+    - foundation model
+    - foundation models
+    - generative AI
+    - vision language model
+    - vision-language model
+    - VLM
+  agentic_capabilities:
+    - autonomous
+    - autonomy
+    - planning
+    - reasoning
+    - decision support
+    - decision-support
+    - decision making
+    - decision-making
+    - tool use
+    - tool-use
+    - tool using
+    - tool-using
+    - function calling
+    - function-calling
+    - workflow orchestration
+    - task decomposition
+    - goal directed
+    - goal-directed
+    - action selection
+    - closed-loop decision
+    - copilot
+  generic_agents:
+    - agent
+    - agents
+    - agent-based
+    - agent based
   agentic:
     - agentic AI
     - agentic system
@@ -100,6 +148,16 @@ keywords:
     - scientific agent
     - autonomous experimentation
     - self-driving laboratory
+    - agent for manufacturing
+    - agents for manufacturing
+    - manufacturing agent
+    - manufacturing agents
+    - factory agent
+    - factory agents
+    - industrial AI agent
+    - industrial AI agents
+    - agent-based manufacturing
+    - agent based manufacturing
   manufacturing:
     - manufacturing
     - smart manufacturing
@@ -211,6 +269,7 @@ keywords:
 
 query_families:
   general_agentic_manufacturing: '((all:"agentic AI" OR all:"LLM agent" OR all:"multi-agent system" OR all:"autonomous agent" OR all:"tool-using agent" OR all:"agentic framework") AND (all:manufacturing OR all:"smart manufacturing" OR all:machining OR all:CNC OR all:"additive manufacturing" OR all:assembly OR all:"industrial robot" OR all:"production planning" OR all:"digital twin"))'
+  general_manufacturing_agents: '((all:agent OR all:agents OR all:"agent-based" OR all:"manufacturing agent" OR all:"factory agent" OR all:"industrial AI agent") AND (all:manufacturing OR all:"smart factory" OR all:machining OR all:CNC OR all:"job shop" OR all:"industrial robot" OR all:"additive manufacturing"))'
   manufacturing_reasoning: '((all:"large language model" OR all:LLM OR all:"foundation model") AND (all:manufacturing OR all:machining OR all:production OR all:factory) AND (all:agent OR all:planning OR all:reasoning OR all:autonomous OR all:decision OR all:tool))'
   multi_agent_manufacturing: '((all:"multi-agent" OR all:"multi agent" OR all:multiagent) AND (all:manufacturing OR all:production OR all:machining OR all:assembly OR all:factory))'
   knowledge_agents: '((all:"knowledge graph" OR all:ontology OR all:RAG OR all:"retrieval augmented generation") AND (all:"LLM agent" OR all:"AI agent" OR all:"multi-agent" OR all:"large language model") AND (all:manufacturing OR all:machining OR all:production))'

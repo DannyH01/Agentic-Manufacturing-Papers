@@ -61,6 +61,8 @@ def process_candidates(candidates: list[dict[str, Any]], config: dict[str, Any],
             "last_seen": seen_at,
         })
         accepted.append(paper)
+        LOGGER.info("Accepted paper (score=%d, category=%s): %s",
+                    relevance_score, primary, paper.get("title", paper.get("arxiv_id", "unknown")))
     return accepted, rejected
 
 
@@ -119,7 +121,8 @@ def run(force: bool = False, dry_run: bool = False, root: Path = ROOT) -> int:
     candidates = fetch_recent_papers(config, cutoff)
     timestamp = isoformat(now)
     accepted, rejected = process_candidates(candidates, config, timestamp)
-    LOGGER.info("Papers retrieved: %d; rejected by relevance filter: %d", len(candidates), rejected)
+    LOGGER.info("Papers retrieved: %d raw, %d unique; accepted: %d; rejected by relevance filter: %d",
+                len(candidates), len(accepted) + rejected, len(accepted), rejected)
     existing, removed_count = revalidate_existing(existing, config)
     if removed_count:
         LOGGER.info("Removed %d existing papers that no longer pass relevance policy", removed_count)

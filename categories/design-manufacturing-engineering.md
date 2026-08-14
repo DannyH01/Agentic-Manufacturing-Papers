@@ -2,9 +2,10 @@
 
 Agentic CAD/CAM, design-for-manufacturing, toolpath, and engineering workflows.
 
-Total papers: 0
+Total papers: 1
 
 [Back to the main collection](../README.md)
 
 | Paper | Abstract | Comments |
 |---|---|---|
+| [Memory-Augmented Reinforcement Learning Agent for CAD Generation](https://arxiv.org/abs/2605.19748v2)<br><br>Yin Xiaolong et al.<br><br>2026-05-19 | Automatic generation of computer-aided design (CAD) models is a core technology for enabling intelligence in advanced manufacturing. Existing generation methods based on large language models (LLMs) often fall short when handling complex CAD models characterized by long operation sequences, diverse operation types, and strong geometric constraints, primarily because reasoning chains break and effective error-correction mechanisms are lacking. To address this problem, this paper proposes a memory-augmented reinforcement learning framework for CAD generation agents. The framework encapsulates the underlying geometric kernel into a structured toolchain callable by the agent and builds a closed-loop mechanism of design intent understanding, global planning, execution, and multi-dimensional verification. It also designs a dual-track memory module consisting of a case library and a skill library, and proposes a dynamic utility retrieval algorithm. By introducing reinforcement learning into retrieval and policy optimization, the agent can effectively avoid retrieval traps in which examples are semantically similar but geometrically infeasible, enabling online self-correction and continual evolution without additional large-scale annotated data. Experiments show that the proposed method significantly improves both the success rate and geometric consistency on complex CAD model generation tasks. | `Design &amp; Manufacturing Engineering` `memory` `reinforcement-learning` `manufacturing` `CAD` `optimization` `planning`<br>We are withdrawing this manuscript because we have identified issues in the current analysis that require substantial revision. Until these issues are resolved, we do not consider the present version suitable for citation |
