@@ -51,6 +51,18 @@ def test_ambiguous_process_control_phrase_is_rejected_without_domain_anchor():
     assert not accepted
 
 
+def test_automated_experimentation_without_agentic_ai_is_rejected():
+    accepted, _, _ = is_relevant(
+        paper(
+            "An Automated Magnetron Sputtering Chamber",
+            "Manufacturing processes are accelerated by automated and autonomous experimentation. "
+            "The instrumentation performs synchronized data collection and system control.",
+        ),
+        CONFIG,
+    )
+    assert not accepted
+
+
 def test_title_matches_are_weighted_more_than_abstract_only_matches():
     title_score, _ = score_relevance(
         paper("LLM Agent for Manufacturing", "We present a benchmark."), CONFIG

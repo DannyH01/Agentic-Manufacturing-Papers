@@ -5,7 +5,7 @@ An automatically updated collection of research on agentic AI, LLM agents, multi
 This repository covers manufacturing copilots, digital twins, robotics, process and production planning, quality, maintenance, knowledge systems, engineering workflows, and related intelligent manufacturing systems. Inclusion and classification use automated keyword retrieval and deterministic relevance scoring, so occasional refinements may be needed.
 
 - Last updated: 2026-08-14T18:10:20Z
-- Total papers: 1
+- Total papers: 0
 - New papers this update: 0
 - Updated papers this update: 0
 
@@ -28,7 +28,6 @@ This repository covers manufacturing copilots, digital twins, robotics, process 
 
 | Paper | Abstract | Comments |
 |---|---|---|
-| [An Automated Magnetron Sputtering Chamber for Ferroelectric Thin Film Deposition](https://arxiv.org/abs/2608.08647v1)<br><br>Stanislav A. Udovenko et al.<br><br>2026-08-09 | Optimization of next-generation materials synthesis and manufacturing processes can be accelerated by effective use of digital datasets. However, a majority of existing custom research infrastructure, including that for thin film deposition, is primarily manually operated and not compatible with this new research paradigm. Here, a template is provided for upgrading existing manual deposition chambers to enable automated and autonomous experimentation. As an example, the upgrade of an existing magnetron sputtering chamber dedicated to synthesis of wurtzite ferroelectrics is presented. Focus is placed on automation of instrumentation; system and deposition control; and synchronized and automated data collection strategies. An example use case of the system for semi-autonomous determination of process-property relationships is presented, specifically minimization of coercive field in wurtzite Al$_{1-x-y}$Sc$_x$B$_y$N thin films. | `Scientific Discovery &amp; Experimentation` `manufacturing` `optimization` |
 
 ## Data and methodology
 

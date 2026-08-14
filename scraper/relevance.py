@@ -47,13 +47,17 @@ def is_relevant(paper: dict[str, Any], config: dict[str, Any]) -> tuple[bool, in
     score, matches = score_relevance(paper, config)
     combined = " ".join((paper.get("title", ""), paper.get("abstract", ""), paper.get("comment", "")))
     agentic = matching_phrases(combined, config["keywords"]["agentic"])
+    agentic_core = matching_phrases(combined, config["keywords"]["agentic_core"])
     manufacturing = matching_phrases(combined, config["keywords"]["manufacturing"])
     manufacturing_context = matching_phrases(combined, config["keywords"]["manufacturing_context"])
     exclusions = matching_phrases(combined, config["keywords"].get("exclusions", []))
 
     # Both sides of the scope are mandatory. Excluded senses only veto a paper
     # when no explicit, stronger agentic phrase beyond the excluded phrase exists.
-    accepted = bool(agentic and manufacturing and manufacturing_context and
+    # Automation and autonomous experimentation alone are not evidence of an
+    # AI agent. At least one explicit agentic/LLM/multi-agent capability is
+    # required in addition to manufacturing context.
+    accepted = bool(agentic and agentic_core and manufacturing and manufacturing_context and
                     score >= config["relevance"]["minimum_score"])
     if exclusions and not any("agentic" in item.casefold() or "llm" in item.casefold() or
                               "multi" in item.casefold() or "autonomous" in item.casefold()

@@ -24,6 +24,43 @@ relevance:
   application_weight: 2
 
 keywords:
+  agentic_core:
+    - agentic AI
+    - agentic system
+    - agentic systems
+    - agentic framework
+    - agentic frameworks
+    - agentic workflow
+    - agentic workflows
+    - AI agent
+    - AI agents
+    - intelligent agent
+    - intelligent agents
+    - autonomous agent
+    - autonomous agents
+    - LLM agent
+    - LLM agents
+    - large language model agent
+    - large language model agents
+    - language model agent
+    - language model agents
+    - multi-agent
+    - multi agent
+    - multiagent
+    - tool-using agent
+    - tool using agent
+    - tool-augmented LLM
+    - tool augmented LLM
+    - tool-using language model
+    - autonomous AI
+    - AI copilot
+    - LLM copilot
+    - ReAct agent
+    - function calling agent
+    - reasoning agent
+    - planning agent
+    - AI scientist
+    - scientific agent
   agentic:
     - agentic AI
     - agentic system
