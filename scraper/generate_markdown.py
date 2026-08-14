@@ -53,10 +53,17 @@ def _comments_cell(paper: dict[str, Any], config: dict[str, Any]) -> str:
     return "<br>".join(piece for piece in pieces if piece)
 
 
+def _abstract_cell(abstract: str) -> str:
+    return f"<details><summary>Show abstract</summary><br>{_escape(abstract)}</details>"
+
+
 def paper_table(papers: list[dict[str, Any]], config: dict[str, Any]) -> str:
     lines = ["| Paper | Abstract | Comments |", "|---|---|---|"]
     for paper in papers:
-        lines.append(f"| {_paper_cell(paper)} | {_escape(paper.get('abstract', ''))} | {_comments_cell(paper, config)} |")
+        lines.append(
+            f"| {_paper_cell(paper)} | {_abstract_cell(paper.get('abstract', ''))} | "
+            f"{_comments_cell(paper, config)} |"
+        )
     return "\n".join(lines)
 
 
