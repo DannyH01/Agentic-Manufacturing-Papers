@@ -17,6 +17,11 @@ def _escape(value: str) -> str:
     return html.escape(normalize_whitespace(value), quote=False).replace("|", "&#124;")
 
 
+def _code_label(value: str) -> str:
+    """Sanitize trusted labels without HTML-encoding ampersands in code spans."""
+    return normalize_whitespace(value).replace("`", "'").replace("|", "/")
+
+
 def _paper_cell(paper: dict[str, Any]) -> str:
     authors = paper.get("authors", [])
     if len(authors) > 3:
@@ -30,7 +35,7 @@ def _paper_cell(paper: dict[str, Any]) -> str:
 def _comments_cell(paper: dict[str, Any], config: dict[str, Any]) -> str:
     category = config["categories"][paper["primary_category"]]["title"]
     tags = paper.get("ai_tags", []) + paper.get("manufacturing_tags", []) + paper.get("research_tags", [])
-    pieces = [" ".join(f"`{_escape(tag)}`" for tag in [category] + tags[:7])]
+    pieces = [" ".join(f"`{_code_label(tag)}`" for tag in [category] + tags[:7])]
     if paper.get("comment"):
         pieces.append(_escape(paper["comment"]))
     if paper.get("journal_ref"):
