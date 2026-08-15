@@ -35,7 +35,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run tests
-        run: pytest
+        run: python -m pytest
 
       - name: Update papers
         if: github.event_name != 'workflow_dispatch' || inputs.force_update != true
