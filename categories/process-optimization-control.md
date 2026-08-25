@@ -2,9 +2,10 @@
 
 Agentic process optimization, adaptive control, and autonomous process adjustment.
 
-Total papers: 0
+Total papers: 1
 
 [Back to the main collection](../README.md)
 
 | Paper | Abstract | Comments |
 |---|---|---|
+| [Empowering Polymeric Materials Discovery by Artificial Intelligence](https://arxiv.org/abs/2606.20753v2)<br><br>Chenyao Ma et al.<br><br>2026-06-18 | <details><summary>Show abstract</summary><br>Polymeric materials underpin modern technologies spanning energy storage, microelectronics, healthcare and sustainable manufacturing. Yet their rational design remains exceptionally challenging because material performance emerges from complex interactions among molecular composition, chain architecture, processing history and hierarchical structural evolution across multiple length and time scales. Consequently, polymer research has long relied on labor-intensive experimentation and fragmented modeling approaches, limiting both mechanistic understanding and innovation efficiency. Recent advances in data infrastructure, machine learning, large artificial intelligence (AI) models and laboratory automation are beginning to reshape this landscape. Rather than functioning as isolated tools, polymer databases, predictive models, AI agents and automated laboratories are increasingly converging into interconnected discovery ecosystems. As a result, the central challenge is shifting from improving predictive accuracy alone to enabling reliable decision-making, adaptive learning and seamless integration across computation, experimentation and scientific reasoning. We argue that polymer science is entering an era of autonomous discovery, in which data, simulation, reasoning and experimentation operate within self-improving feedback loops that continuously generate hypotheses, design materials, execute experiments and refine predictive models. By unifying molecular design, process optimization, experimental validation and industrial translation, such autonomous ecosystems establish a more predictive, reproducible and scalable paradigm for polymer innovation, fundamentally transforming how polymer research is conducted.</details> | `Process Optimization & Control` `simulation` `manufacturing` `process-optimization` `optimization` |

@@ -1,5 +1,396 @@
 [
   {
+    "arxiv_id": "2604.16804",
+    "version": "v3",
+    "title": "AutoOR: Scalably Post-training LLMs to Autoformalize Operations Research Problems",
+    "authors": [
+      "Sumeet Ramesh Motwani",
+      "Chuan Du",
+      "Aleksander Petrov",
+      "Christopher Davis",
+      "Philip Torr",
+      "Antonio Papania-Davis",
+      "Weishi Yan"
+    ],
+    "abstract": "Optimization problems are central to decision-making in manufacturing, logistics, scheduling, and other industrial settings. Translating complicated descriptions of these problems into solver-ready formulations requires specialized operations research (OR) expertise, making it hard to scale. We present AutoOR, a scalable synthetic data generation and reinforcement learning pipeline that trains LLMs to autoformalize optimization problems specified in natural language across linear, mixed-integer, and non-linear categories. AutoOR generates verified training data from standard optimization forms and uses solver execution feedback as the reward signal for RL post-training. AutoOR applied to an 8B model achieves state-of-the-art or competitive results across six established OR benchmarks, matching significantly larger frontier models. For a non-linear problem class involving physical dynamics, where frontier models score near 0%, we introduce a curriculum RL strategy that bootstraps from limited initial training data to make this class tractable for post-training. We believe that methods such as AutoOR can significantly accelerate industrial decision-making with AI.",
+    "published": "2026-04-18T03:24:54Z",
+    "updated": "2026-08-19T16:48:08Z",
+    "arxiv_url": "https://arxiv.org/abs/2604.16804v3",
+    "pdf_url": "https://arxiv.org/pdf/2604.16804v3",
+    "arxiv_primary_category": "cs.LG",
+    "arxiv_categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "manufacturing_reasoning"
+    ],
+    "ai_tags": [
+      "reinforcement-learning"
+    ],
+    "manufacturing_tags": [
+      "manufacturing"
+    ],
+    "research_tags": [
+      "optimization"
+    ],
+    "primary_category": "production_planning_scheduling",
+    "category_score": 0,
+    "relevance_score": 9,
+    "matched_keywords": [
+      "decision making",
+      "decision-making",
+      "LLMs",
+      "manufacturing"
+    ],
+    "first_seen": "2026-08-23T08:35:59Z",
+    "last_seen": "2026-08-23T08:35:59Z"
+  },
+  {
+    "arxiv_id": "2608.17970",
+    "version": "v1",
+    "title": "Quo Vadis? Scientific Discovery in the Age of Artificial Intelligence",
+    "authors": [
+      "Petr O. Jedlicka"
+    ],
+    "abstract": "This paper examines the growing role of AI in scientific discovery. It first surveys the rapid rise of AI capabilities, especially in reasoning, abstraction, planning, and long-horizon task execution, before turning to scientometric evidence of AI's diffusion across the sciences. It then proposes a typology of AI systems used in research, ranging from specialized scientific AI through scientific AI assistants and agents to hybrid experimental systems that combine computation and physical experimentation. On this basis, it offers a selective overview of recent achievements in mathematics and computer science, physics, chemistry, the life sciences, and the behavioural and social sciences. It argues that, despite these advances, current systems remain constrained by important technical, epistemic, and institutional limitations, and that their growing use introduces both near-term and longer-term risks. The conclusion further suggests that the advancement of AI in science raises broader questions concerning the division of cognitive labour between human researchers and machines.",
+    "published": "2026-08-18T16:21:44Z",
+    "updated": "2026-08-18T16:21:44Z",
+    "arxiv_url": "https://arxiv.org/abs/2608.17970v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.17970v1",
+    "arxiv_primary_category": "cs.CY",
+    "arxiv_categories": [
+      "cs.CY"
+    ],
+    "comment": "To be published in Theory of Science",
+    "journal_ref": "",
+    "doi": "10.46938/tv.2026.728",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_manufacturing_agents"
+    ],
+    "ai_tags": [],
+    "manufacturing_tags": [
+      "turning"
+    ],
+    "research_tags": [
+      "planning",
+      "scientific-discovery"
+    ],
+    "primary_category": "scientific_discovery",
+    "category_score": 7,
+    "relevance_score": 9,
+    "matched_keywords": [
+      "agents",
+      "turning"
+    ],
+    "first_seen": "2026-08-19T08:42:48Z",
+    "last_seen": "2026-08-23T08:35:59Z"
+  },
+  {
+    "arxiv_id": "2607.06008",
+    "version": "v3",
+    "title": "PolyWorkBench: Benchmarking LLM Agents for Cross-Lingual Long-Horizon Workflows",
+    "authors": [
+      "Hongliang Li",
+      "Yijin Liu",
+      "Zhiwei Zhang",
+      "Zihe Liu",
+      "Xinyue Lou",
+      "Jinan Xu",
+      "Fandong Meng",
+      "Kaiyu Huang"
+    ],
+    "abstract": "While Large Language Model (LLM) agents excel at monolingual long-horizon planning and tool use, enterprise workflows inherently require processing multilingual resources across extended trajectories. The interaction between multilinguality and long-horizon execution, however, remains underexplored. We introduce PolyWorkBench, a benchmark designed to evaluate LLM agents on multilingual, long-horizon workplace workflows. PolyWorkBench features 67 tasks across five core domains: commerce, knowledge work, legal analysis, localization, and manufacturing. Tasks are authored by the paper's authors from real-world data seeds and independently verified through a second-author audit. Agents must integrate heterogeneous multilingual inputs, execute iterative tool-use trajectories, and produce structured domain artifacts. To rigorously assess performance, we adopt Grade, a task-specific structural scoring rubric, as our primary ranking metric, and complement it with Pytest for executable state verification and LLM-as-Judge for semantic quality diagnostics. Benchmark evaluations reveal that agent performance varies substantially across languages and drops sharply on the harder cross-lingual tasks, and our analysis shows that multilingual execution exposes systematic failure modes across planning, tool interaction, and decision-making in long-horizon agents.",
+    "published": "2026-07-07T08:50:09Z",
+    "updated": "2026-08-17T05:33:41Z",
+    "arxiv_url": "https://arxiv.org/abs/2607.06008v3",
+    "pdf_url": "https://arxiv.org/pdf/2607.06008v3",
+    "arxiv_primary_category": "cs.AI",
+    "arxiv_categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "comment": "17 Pages, 5 figures",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_agentic_manufacturing",
+      "general_manufacturing_agents",
+      "manufacturing_reasoning"
+    ],
+    "ai_tags": [
+      "LLM",
+      "tool-use"
+    ],
+    "manufacturing_tags": [
+      "manufacturing"
+    ],
+    "research_tags": [
+      "planning"
+    ],
+    "primary_category": "production_planning_scheduling",
+    "category_score": 0,
+    "relevance_score": 14,
+    "matched_keywords": [
+      "agent",
+      "agents",
+      "decision making",
+      "decision-making",
+      "large language model",
+      "LLM",
+      "LLM agents",
+      "manufacturing",
+      "planning",
+      "tool use",
+      "tool-use"
+    ],
+    "first_seen": "2026-08-19T08:42:48Z",
+    "last_seen": "2026-08-23T08:35:59Z"
+  },
+  {
+    "arxiv_id": "2606.20753",
+    "version": "v2",
+    "title": "Empowering Polymeric Materials Discovery by Artificial Intelligence",
+    "authors": [
+      "Chenyao Ma",
+      "Linda Zhang",
+      "Yuheng Chen",
+      "Wei Du",
+      "Shangwen Fang",
+      "Zihao Jiang",
+      "Chuanyu Liu",
+      "Xinyu Ma",
+      "Rui Su",
+      "Gang Wang",
+      "Muyao Yu",
+      "Dong Zhong",
+      "Jie Zhu",
+      "Weibo Gong",
+      "Huan Gu",
+      "Limin Li",
+      "Chen Shen",
+      "Rui Wu",
+      "Zhenghao Wu",
+      "Kan Xu",
+      "Min Zhou",
+      "Donglin He",
+      "Xiayun Huang",
+      "Shan Jiang",
+      "Pengfei Ou",
+      "Jiayu Peng",
+      "Yuwei Zhang",
+      "Jie Zhao",
+      "Di Zhang",
+      "Piao Ma",
+      "Zhenghao Li",
+      "Hao Li"
+    ],
+    "abstract": "Polymeric materials underpin modern technologies spanning energy storage, microelectronics, healthcare and sustainable manufacturing. Yet their rational design remains exceptionally challenging because material performance emerges from complex interactions among molecular composition, chain architecture, processing history and hierarchical structural evolution across multiple length and time scales. Consequently, polymer research has long relied on labor-intensive experimentation and fragmented modeling approaches, limiting both mechanistic understanding and innovation efficiency. Recent advances in data infrastructure, machine learning, large artificial intelligence (AI) models and laboratory automation are beginning to reshape this landscape. Rather than functioning as isolated tools, polymer databases, predictive models, AI agents and automated laboratories are increasingly converging into interconnected discovery ecosystems. As a result, the central challenge is shifting from improving predictive accuracy alone to enabling reliable decision-making, adaptive learning and seamless integration across computation, experimentation and scientific reasoning. We argue that polymer science is entering an era of autonomous discovery, in which data, simulation, reasoning and experimentation operate within self-improving feedback loops that continuously generate hypotheses, design materials, execute experiments and refine predictive models. By unifying molecular design, process optimization, experimental validation and industrial translation, such autonomous ecosystems establish a more predictive, reproducible and scalable paradigm for polymer innovation, fundamentally transforming how polymer research is conducted.",
+    "published": "2026-06-18T05:03:02Z",
+    "updated": "2026-08-17T02:23:37Z",
+    "arxiv_url": "https://arxiv.org/abs/2606.20753v2",
+    "pdf_url": "https://arxiv.org/pdf/2606.20753v2",
+    "arxiv_primary_category": "physics.chem-ph",
+    "arxiv_categories": [
+      "physics.chem-ph",
+      "cs.AI"
+    ],
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_manufacturing_agents",
+      "process_optimization"
+    ],
+    "ai_tags": [
+      "simulation"
+    ],
+    "manufacturing_tags": [
+      "manufacturing",
+      "process-optimization"
+    ],
+    "research_tags": [
+      "optimization"
+    ],
+    "primary_category": "process_optimization_control",
+    "category_score": 2,
+    "relevance_score": 11,
+    "matched_keywords": [
+      "agents",
+      "AI agents",
+      "manufacturing",
+      "process optimization"
+    ],
+    "first_seen": "2026-08-19T08:42:48Z",
+    "last_seen": "2026-08-23T08:35:59Z"
+  },
+  {
+    "arxiv_id": "2605.13221",
+    "version": "v2",
+    "title": "An Agentic AI Framework with Large Language Models and Chain-of-Thought for UAV-Assisted Logistics Scheduling with Mobile Edge Computing",
+    "authors": [
+      "Hanwen Zhang",
+      "Dusit Niyato",
+      "Wei Zhang",
+      "Xin Lou",
+      "Malcolm Yoke Hean Low"
+    ],
+    "abstract": "In cloud manufacturing, unmanned aerial vehicles (UAVs) can support both product collection and mobile edge computing (MEC). This joint operation forms a hybrid scheduling problem, where physical logistics decisions are coupled with computational task scheduling. In this paper, UAVs collect finished products from manufacturing stations and transport them back to a central depot. Meanwhile, computational tasks generated by industrial sensor devices at these stations are processed locally, at UAVs, or offloaded via UAVs to the cloud. This coupling makes the problem challenging. A UAV can provide MEC services only during its service window at a station, so routing decisions directly determine when UAV-assisted offloading is available. Routing decisions also affect the UAV energy budget and the availability of onboard computing and communication resources for computational task execution under task deadline constraints. To address this, we propose an agentic-AI-assisted optimization framework with two components. First, we develop an agentic AI that combines large language models, retrieval-augmented generation, and chain-of-thought reasoning to translate user input into an interpretable mathematical formulation for the hybrid scheduling problem. Second, we design a hierarchical deep reinforcement learning approach based on proximal policy optimization (PPO), where the upper layer learns UAV routing and the lower layer optimizes per-slot task execution and resource allocation. Simulation results show that the proposed framework yields more consistent formulations, while the hierarchical PPO achieves full product collection in 99.6% of the last 500 episodes and maintains a 100% deadline satisfaction rate, with more stable performance than the advantage actor-critic approach.",
+    "published": "2026-05-13T09:13:19Z",
+    "updated": "2026-08-15T06:44:34Z",
+    "arxiv_url": "https://arxiv.org/abs/2605.13221v2",
+    "pdf_url": "https://arxiv.org/pdf/2605.13221v2",
+    "arxiv_primary_category": "cs.AI",
+    "arxiv_categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "comment": "37 pages",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_agentic_manufacturing",
+      "general_manufacturing_agents",
+      "knowledge_agents",
+      "manufacturing_reasoning"
+    ],
+    "ai_tags": [
+      "agentic-AI",
+      "RAG",
+      "reinforcement-learning",
+      "simulation"
+    ],
+    "manufacturing_tags": [
+      "manufacturing"
+    ],
+    "research_tags": [
+      "optimization"
+    ],
+    "primary_category": "knowledge_manufacturing_intelligence",
+    "category_score": 4,
+    "relevance_score": 14,
+    "matched_keywords": [
+      "agentic AI",
+      "large language models",
+      "manufacturing",
+      "reasoning"
+    ],
+    "first_seen": "2026-08-19T08:42:48Z",
+    "last_seen": "2026-08-19T08:42:48Z"
+  },
+  {
+    "arxiv_id": "2608.14122",
+    "version": "v1",
+    "title": "Reinforcement Learning-Based Production Scheduling in an Industry-Based Coating Scenario Using the Digital Model Playground",
+    "authors": [
+      "Arne Kröger",
+      "Ralf Buschermöhle",
+      "Wilhelm Hasselbring",
+      "Henrik Wilbers"
+    ],
+    "abstract": "Production scheduling in complex manufacturing environments is challenging when sequence-dependent setup times, stochastic disturbances, and due-date constraints must be addressed simultaneously. While reinforcement learning (RL) methods have shown promising results in research, most studies rely on simplified benchmark processes, limiting their industrial relevance. This paper demonstrates the applicability of RL-based scheduling in an industry-inspired coating process that reflects practical complexities such as sequence-dependent setup times, machine breakdowns, and variable utilization. The open-source Digital Model Playground (DMPG), a discrete event simulation framework, is used to model the scenario and to train RL agents. Two standard algorithms, Deep Q-Networks and Proximal Policy Optimization, are benchmarked against conventional dispatching rules to illustrate feasibility and to provide a transparent testbed for further research. Results indicate that RL-based scheduling achieves balanced improvements across key performance indicators, with PPO delivering the most robust performance. The main contribution of this work is to bridge the gap between academic research and industrial practice by validating RL-based scheduling in a realistic, shareable scenario and by providing a reusable open-source framework for future studies.",
+    "published": "2026-08-14T09:28:20Z",
+    "updated": "2026-08-14T09:28:20Z",
+    "arxiv_url": "https://arxiv.org/abs/2608.14122v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.14122v1",
+    "arxiv_primary_category": "cs.AI",
+    "arxiv_categories": [
+      "cs.AI"
+    ],
+    "comment": "Copyright 2026 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works",
+    "journal_ref": "",
+    "doi": "10.1109/ICECET65726.2026.11632318",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_manufacturing_agents"
+    ],
+    "ai_tags": [
+      "reinforcement-learning",
+      "simulation"
+    ],
+    "manufacturing_tags": [
+      "manufacturing",
+      "scheduling"
+    ],
+    "research_tags": [
+      "optimization"
+    ],
+    "primary_category": "production_planning_scheduling",
+    "category_score": 7,
+    "relevance_score": 16,
+    "matched_keywords": [
+      "agents",
+      "manufacturing",
+      "production scheduling"
+    ],
+    "first_seen": "2026-08-19T08:42:48Z",
+    "last_seen": "2026-08-19T08:42:48Z"
+  },
+  {
+    "arxiv_id": "2603.11461",
+    "version": "v3",
+    "title": "CoViLLM: An Adaptive Human-Robot Collaborative Assembly Framework Using Large Language Models",
+    "authors": [
+      "Jiabao Zhao",
+      "Jonghan Lim",
+      "Hongliang Li",
+      "Ilya Kovalenko"
+    ],
+    "abstract": "With increasing demand for mass customization, traditional manufacturing robots that rely on rule-based operations lack the flexibility to accommodate customized or new product variants. Human-Robot Collaboration has demonstrated potential to improve system adaptability by leveraging human versatility and decision-making capabilities. However, existing Human-Robot Collaborative frameworks typically depend on predefined perception-manipulation pipelines, limiting their ability to autonomously generate task plans for new product assembly. In this work, we propose CoViLLM, an adaptive human-robot collaborative assembly framework that supports the assembly of customized and previously unseen products. CoViLLM combines depth-camera-based localization for object position estimation, human operator classification for identifying new components, and a Large Language Model for assembly task planning based on natural language instructions. The framework is validated on the NIST Assembly Task Board for known, customized, and new product cases. Experimental results show that the proposed framework enables flexible collaborative assembly by extending Human-Robot Collaboration beyond predefined product and task settings.",
+    "published": "2026-03-12T02:37:48Z",
+    "updated": "2026-08-14T02:01:37Z",
+    "arxiv_url": "https://arxiv.org/abs/2603.11461v3",
+    "pdf_url": "https://arxiv.org/pdf/2603.11461v3",
+    "arxiv_primary_category": "cs.RO",
+    "arxiv_categories": [
+      "cs.RO"
+    ],
+    "comment": "6 pages, 7 figures. Accepted to ASME MSEC 2026",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "manufacturing_reasoning"
+    ],
+    "ai_tags": [
+      "LLM"
+    ],
+    "manufacturing_tags": [
+      "manufacturing",
+      "assembly"
+    ],
+    "research_tags": [
+      "planning"
+    ],
+    "primary_category": "robotics_autonomous_manufacturing",
+    "category_score": 4,
+    "relevance_score": 9,
+    "matched_keywords": [
+      "decision making",
+      "decision-making",
+      "large language model",
+      "manufacturing",
+      "planning"
+    ],
+    "first_seen": "2026-08-19T08:42:48Z",
+    "last_seen": "2026-08-19T08:42:48Z"
+  },
+  {
     "arxiv_id": "2605.19748",
     "version": "v2",
     "title": "Memory-Augmented Reinforcement Learning Agent for CAD Generation",
@@ -59,7 +450,7 @@
       "reasoning"
     ],
     "first_seen": "2026-08-14T18:41:04Z",
-    "last_seen": "2026-08-14T18:41:04Z"
+    "last_seen": "2026-08-15T10:23:28Z"
   },
   {
     "arxiv_id": "2608.09545",
@@ -98,7 +489,7 @@
       "manufacturing"
     ],
     "first_seen": "2026-08-14T18:41:04Z",
-    "last_seen": "2026-08-14T18:41:04Z"
+    "last_seen": "2026-08-15T10:23:28Z"
   },
   {
     "arxiv_id": "2607.28126",
@@ -156,7 +547,7 @@
       "reasoning"
     ],
     "first_seen": "2026-08-14T18:41:04Z",
-    "last_seen": "2026-08-14T18:41:04Z"
+    "last_seen": "2026-08-15T10:23:28Z"
   },
   {
     "arxiv_id": "2608.08884",
@@ -210,6 +601,6 @@
       "planning"
     ],
     "first_seen": "2026-08-14T18:41:04Z",
-    "last_seen": "2026-08-14T18:41:04Z"
+    "last_seen": "2026-08-15T10:23:28Z"
   }
 ]
