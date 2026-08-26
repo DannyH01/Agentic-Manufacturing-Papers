@@ -1,47 +1,5 @@
 [
   {
-    "arxiv_id": "2608.24749",
-    "version": "v1",
-    "title": "From Natural Language Requirements to Graphical User Interfaces: Automated Prototyping and Verification with Pretrained Language Models",
-    "authors": [
-      "Kristian Kolthoff"
-    ],
-    "abstract": "Requirements elicitation is essential for developing interactive software systems, as it helps ensure that the resulting product meets stakeholder needs. Since elicitation typically relies on natural language (NL), misunderstandings can arise from its inherent ambiguity. Formal specifications can reduce ambiguity but require technical expertise. GUI prototyping therefore provides a valuable alternative by turning requirements into tangible visual artifacts that support communication, elicitation, and validation. However, creating high-fidelity prototypes remains time-consuming and costly. Similarly, requirements verification, which ensures that implementations conform to specified requirements, is still largely manual, while existing automated approaches are often limited to static, rule-based techniques. This work addresses two challenges: (C1) reducing the effort required to transform NL requirements into GUI prototypes, and (C2) reducing the effort required for requirements verification in GUI applications and prototypes. For C1, we introduce novel NL-based GUI retrieval and reranking methods, new benchmarks, and techniques for efficiently adapting LLMs to GUI generation, including proprietary GUI representations. Their effectiveness is demonstrated on a large benchmark with human annotations. For C2, we propose LLM-based methods for verifying semantically complex NL requirements on static GUI prototypes and introduce a multimodal LLM-based agent for verifying complex functional and non-functional requirements in dynamic GUI applications through automatically generated and evaluated interaction trajectories. Overall, the proposed methods substantially reduce manual effort in GUI prototyping and requirements verification.",
-    "published": "2026-08-25T15:53:24Z",
-    "updated": "2026-08-25T15:53:24Z",
-    "arxiv_url": "https://arxiv.org/abs/2608.24749v1",
-    "pdf_url": "https://arxiv.org/pdf/2608.24749v1",
-    "arxiv_primary_category": "cs.SE",
-    "arxiv_categories": [
-      "cs.SE"
-    ],
-    "comment": "",
-    "journal_ref": "",
-    "doi": "",
-    "code_url": "",
-    "project_url": "",
-    "matched_query_families": [
-      "manufacturing_reasoning"
-    ],
-    "ai_tags": [
-      "LLM",
-      "multimodal"
-    ],
-    "manufacturing_tags": [
-      "turning"
-    ],
-    "research_tags": [],
-    "primary_category": "production_planning_scheduling",
-    "category_score": 0,
-    "relevance_score": 9,
-    "matched_keywords": [
-      "agent",
-      "turning"
-    ],
-    "first_seen": "2026-08-26T08:50:48Z",
-    "last_seen": "2026-08-26T08:50:48Z"
-  },
-  {
     "arxiv_id": "2608.24039",
     "version": "v1",
     "title": "Design-to-Plan: A Large Language Model-Based Multi-Agent Framework for Manufacturing Process Planning from 3D CAD Models and 2D Engineering Drawings",
@@ -102,54 +60,6 @@
       "planning",
       "process planning",
       "reasoning"
-    ],
-    "first_seen": "2026-08-26T08:50:48Z",
-    "last_seen": "2026-08-26T08:50:48Z"
-  },
-  {
-    "arxiv_id": "2608.22672",
-    "version": "v1",
-    "title": "A-CPES: A Reference Framework for Agentic AI in Cyber-Physical Energy Systems",
-    "authors": [
-      "Xiaoyu Zhang",
-      "Qiuye Sun",
-      "Jiachen Xu",
-      "Zhongming Yao",
-      "Yushuai Li"
-    ],
-    "abstract": "Energy system operation contains a loop of work that automation has never taken over: posing the optimization problem the current cycle should solve, disposing of infeasibility, sequencing a solution into interlocked switching orders, assembling evidence no single model holds, negotiating adjustable capacity with many parties, and settling experience into practice. Licensed dispatchers carry all of it in person, and the rising share of variable renewable generation is making that loop turn faster than their number can grow. Agentic AI supplies the abilities it requires, but enters as the outer loop of control: it calls SCED and the other decision models rather than being called by them. We propose A-CPES, three nested rings, an authorization and accountability frame around an agentic control outer loop around a six-layer CPES core. We argue the loop is indivisible, tune where and how tightly it may close, state eight structural failure modes as falsifiable predictions, and specify six governance modules that rebuild the authorization frame until it covers the loop, before the loop starts turning.",
-    "published": "2026-08-24T00:17:37Z",
-    "updated": "2026-08-24T00:17:37Z",
-    "arxiv_url": "https://arxiv.org/abs/2608.22672v1",
-    "pdf_url": "https://arxiv.org/pdf/2608.22672v1",
-    "arxiv_primary_category": "cs.AI",
-    "arxiv_categories": [
-      "cs.AI"
-    ],
-    "comment": "5 pages, 1 figure",
-    "journal_ref": "",
-    "doi": "",
-    "code_url": "",
-    "project_url": "",
-    "matched_query_families": [
-      "general_agentic_manufacturing",
-      "robotics"
-    ],
-    "ai_tags": [
-      "agentic-AI"
-    ],
-    "manufacturing_tags": [
-      "turning"
-    ],
-    "research_tags": [
-      "optimization"
-    ],
-    "primary_category": "production_planning_scheduling",
-    "category_score": 0,
-    "relevance_score": 14,
-    "matched_keywords": [
-      "agentic AI",
-      "turning"
     ],
     "first_seen": "2026-08-26T08:50:48Z",
     "last_seen": "2026-08-26T08:50:48Z"
@@ -371,95 +281,6 @@
     "last_seen": "2026-08-26T08:50:48Z"
   },
   {
-    "arxiv_id": "2608.21993",
-    "version": "v1",
-    "title": "Gated Decoupled Compositional Bandits: A Unified Theory of Contextual Bandits with Supervised-Calibrated Action Scaling and Pre-Execution Gating",
-    "authors": [
-      "Oleg Miroshnichenko"
-    ],
-    "abstract": "We introduce Gated Decoupled Compositional Bandits (GDCB), a family of contextual bandit algorithms with three structural innovations that jointly fall outside the taxonomy of LinUCB, LinTS, HierTS, factored bandits, neural contextual bandits, and RLHF. In a GDCB system: (i) the action delivered to the environment is the composition of a nominal arm, drawn by a discrete or hierarchical bandit, with a context-dependent scaler; (ii) the scaler parameter is learned in a separate supervised loop, not jointly with arm selection; and (iii) every action passes through a pre-execution gate that may modify or veto the composed action before it reaches the environment. We formalise this class of algorithms, prove four structural theorems characterising its statistical behaviour, and show that six industrially significant systems -- short-term rental dynamic pricing, clinical drug dosing, credit origination, grid demand response, content moderation, and LLM tool-use agents -- are all instances of GDCB, differing only in the composition operator, scaler family, and gate. The central result is the Decoupling Variance Reduction theorem: a well-calibrated scaler removes context-induced variance from the arm-to-reward mapping, turning a non-stationary bandit problem into an approximately stationary one. The Gate-Induced Equivalence theorem shows that under a stationary gate, historical data collected under any prior policy is a valid warm-up initialiser without importance-sampling correction, generalising the companion P-HITL result (arXiv:2606.02595) from human approval to arbitrary gates. In regulated, high-stakes domains, constraints usually treated as deployment frictions -- approval gates, compliance rules, safety shields -- are the mechanism that makes fast deployment possible, not an obstacle to it. The companion paper validates instance 1 (STR dynamic pricing) on real production data.",
-    "published": "2026-08-22T14:58:25Z",
-    "updated": "2026-08-22T14:58:25Z",
-    "arxiv_url": "https://arxiv.org/abs/2608.21993v1",
-    "pdf_url": "https://arxiv.org/pdf/2608.21993v1",
-    "arxiv_primary_category": "cs.LG",
-    "arxiv_categories": [
-      "cs.LG"
-    ],
-    "comment": "30 pages, 4 figures",
-    "journal_ref": "",
-    "doi": "",
-    "code_url": "",
-    "project_url": "",
-    "matched_query_families": [
-      "manufacturing_reasoning"
-    ],
-    "ai_tags": [
-      "LLM",
-      "tool-use"
-    ],
-    "manufacturing_tags": [
-      "turning"
-    ],
-    "research_tags": [],
-    "primary_category": "production_planning_scheduling",
-    "category_score": 0,
-    "relevance_score": 9,
-    "matched_keywords": [
-      "agents",
-      "LLM",
-      "tool use",
-      "tool-use",
-      "turning"
-    ],
-    "first_seen": "2026-08-26T08:50:48Z",
-    "last_seen": "2026-08-26T08:50:48Z"
-  },
-  {
-    "arxiv_id": "2608.21916",
-    "version": "v1",
-    "title": "GenomeHarness: Harnessing Al Agents for Reliable Adaptation of Genome Language Models",
-    "authors": [
-      "Weicai Long",
-      "Yusen Hou",
-      "Houcheng Su",
-      "Junning Feng",
-      "Yanlin Zhang"
-    ],
-    "abstract": "Pretrained genome language models provide reusable representations for DNA sequence analysis, but turning them into reliable downstream predictors remains non-trivial. Their practical performance depends strongly on fine-tuning recipes, and default recipes reported in prior studies may be suboptimal for new tasks or model backbones, making weak downstream results difficult to interpret. These requirements place a substantial operational burden on many intended users, whose expertise is often centered on biological questions and interpretation rather than machine-learning engineering. Reliable use of genome language models therefore requires more than conventional AutoML-style tuning: it requires a systematic, budget-aware, and auditable procedure that lowers the barrier to downstream adaptation. We present GenomeHarness, an agentic harness for adapting genome language models through controlled search over fine-tuning recipes. GenomeHarness combines an AI agent for proposing and repairing recipe edits, a harness for protocol-constrained execution, resource management, and test isolation, and a Monte Carlo tree search controller for allocating search effort across recipe lineages. We evaluate GenomeHarness on DNABERT2 and NTv2-100M-Multi across the NT Benchmark and Genomic Benchmarks. Final evaluation is performed using three random seeds after recipe freezing. Across 52 model-task settings, GenomeHarness improves mean test MCC in 47 settings, including 24 of 26 DNABERT2 settings and 23 of 26 NTv2-100M-Multi settings. The gains are especially pronounced on Genomic Benchmarks and on tasks where the root recipe is unstable or poorly matched, such as human ocr ensembl task. Search traces further show that GenomeHarness progressively identifies stronger recipes, turning downstream adaptation into a controlled and auditable workflow rather than a manual tuning process.",
-    "published": "2026-08-22T11:01:32Z",
-    "updated": "2026-08-22T11:01:32Z",
-    "arxiv_url": "https://arxiv.org/abs/2608.21916v1",
-    "pdf_url": "https://arxiv.org/pdf/2608.21916v1",
-    "arxiv_primary_category": "cs.CE",
-    "arxiv_categories": [
-      "cs.CE"
-    ],
-    "comment": "10 pages, 4 figures",
-    "journal_ref": "",
-    "doi": "",
-    "code_url": "",
-    "project_url": "",
-    "matched_query_families": [
-      "general_manufacturing_agents"
-    ],
-    "ai_tags": [],
-    "manufacturing_tags": [
-      "turning"
-    ],
-    "research_tags": [],
-    "primary_category": "production_planning_scheduling",
-    "category_score": 0,
-    "relevance_score": 9,
-    "matched_keywords": [
-      "agent",
-      "AI agent",
-      "turning"
-    ],
-    "first_seen": "2026-08-26T08:50:48Z",
-    "last_seen": "2026-08-26T08:50:48Z"
-  },
-  {
     "arxiv_id": "2604.16804",
     "version": "v4",
     "title": "AutoOR: Scalably Post-training LLMs to Autoformulate Operations Research Problems",
@@ -510,48 +331,6 @@
     ],
     "first_seen": "2026-08-23T08:35:59Z",
     "last_seen": "2026-08-26T08:50:48Z"
-  },
-  {
-    "arxiv_id": "2608.17970",
-    "version": "v1",
-    "title": "Quo Vadis? Scientific Discovery in the Age of Artificial Intelligence",
-    "authors": [
-      "Petr O. Jedlicka"
-    ],
-    "abstract": "This paper examines the growing role of AI in scientific discovery. It first surveys the rapid rise of AI capabilities, especially in reasoning, abstraction, planning, and long-horizon task execution, before turning to scientometric evidence of AI's diffusion across the sciences. It then proposes a typology of AI systems used in research, ranging from specialized scientific AI through scientific AI assistants and agents to hybrid experimental systems that combine computation and physical experimentation. On this basis, it offers a selective overview of recent achievements in mathematics and computer science, physics, chemistry, the life sciences, and the behavioural and social sciences. It argues that, despite these advances, current systems remain constrained by important technical, epistemic, and institutional limitations, and that their growing use introduces both near-term and longer-term risks. The conclusion further suggests that the advancement of AI in science raises broader questions concerning the division of cognitive labour between human researchers and machines.",
-    "published": "2026-08-18T16:21:44Z",
-    "updated": "2026-08-18T16:21:44Z",
-    "arxiv_url": "https://arxiv.org/abs/2608.17970v1",
-    "pdf_url": "https://arxiv.org/pdf/2608.17970v1",
-    "arxiv_primary_category": "cs.CY",
-    "arxiv_categories": [
-      "cs.CY"
-    ],
-    "comment": "To be published in Theory of Science",
-    "journal_ref": "",
-    "doi": "10.46938/tv.2026.728",
-    "code_url": "",
-    "project_url": "",
-    "matched_query_families": [
-      "general_manufacturing_agents"
-    ],
-    "ai_tags": [],
-    "manufacturing_tags": [
-      "turning"
-    ],
-    "research_tags": [
-      "planning",
-      "scientific-discovery"
-    ],
-    "primary_category": "scientific_discovery",
-    "category_score": 7,
-    "relevance_score": 9,
-    "matched_keywords": [
-      "agents",
-      "turning"
-    ],
-    "first_seen": "2026-08-19T08:42:48Z",
-    "last_seen": "2026-08-23T08:35:59Z"
   },
   {
     "arxiv_id": "2607.06008",

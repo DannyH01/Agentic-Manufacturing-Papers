@@ -33,6 +33,18 @@ def test_generic_agent_paper_without_manufacturing_is_rejected():
     assert not accepted
 
 
+def test_turning_as_ordinary_prose_is_not_manufacturing_context():
+    accepted, _, matches = is_relevant(
+        paper(
+            "An LLM Agent for Requirements Analysis",
+            "The system supports turning natural-language requirements into user interfaces.",
+        ),
+        CONFIG,
+    )
+    assert not accepted
+    assert "turning" not in [match.casefold() for match in matches]
+
+
 def test_nonmanufacturing_production_context_is_rejected():
     accepted, _, _ = is_relevant(
         paper(

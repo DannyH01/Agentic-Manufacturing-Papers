@@ -174,7 +174,6 @@ keywords:
     - CNC
     - machine tool
     - milling
-    - turning
     - grinding
     - additive manufacturing
     - laser powder bed fusion
@@ -220,7 +219,6 @@ keywords:
     - CNC
     - machine tool
     - milling
-    - turning
     - grinding
     - additive manufacturing
     - laser powder bed fusion
@@ -392,7 +390,6 @@ tags:
     CNC: [CNC]
     machining: [machining, machine tool]
     milling: [milling]
-    turning: [turning]
     grinding: [grinding]
     additive-manufacturing: [additive manufacturing, 3D printing]
     LPBF: [LPBF, laser powder bed fusion]
