@@ -1,5 +1,58 @@
 [
   {
+    "arxiv_id": "2608.25928",
+    "version": "v1",
+    "title": "AI Agentic Selective Laser Sintering Process Optimization",
+    "authors": [
+      "Peter Pak",
+      "Victor Alvarado",
+      "Amir Barati Farimani"
+    ],
+    "abstract": "Agentic systems enable the intelligent automation of complex workflows, specific to additive manufacturing this is applicable for complex tasks such as process parameter optimization for mechanical properties. This work investigates the AI enabled agentic process optimization within Selective Laser Sintering (SLS) to iteratively improve the tensile and flexural properties of 3 different materials on the Inova Mk1. These materials include PA12 GF, PA11 Onyx, and PA12 Blend (volume mixture of 25% PA12 GF and 75% PA12 White) and with using knowledge from previous builds and minimal guidance from the user, the agentic system was able to optimize process parameters over a small number of iterations to achieve comparable TDS specified mechanical properties. This work showcases the ability for an agentic system to continually learn from updated data, enabling the intelligent automation of complex tasks such as process parameter optimization for selective laser sintering.",
+    "published": "2026-08-26T15:39:41Z",
+    "updated": "2026-08-26T15:39:41Z",
+    "arxiv_url": "https://arxiv.org/abs/2608.25928v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.25928v1",
+    "arxiv_primary_category": "cs.MA",
+    "arxiv_categories": [
+      "cs.MA"
+    ],
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_manufacturing_agents",
+      "multi_agent_manufacturing",
+      "process_optimization"
+    ],
+    "ai_tags": [
+      "agentic-AI"
+    ],
+    "manufacturing_tags": [
+      "manufacturing",
+      "additive-manufacturing",
+      "process-optimization"
+    ],
+    "research_tags": [
+      "optimization"
+    ],
+    "primary_category": "process_optimization_control",
+    "category_score": 9,
+    "relevance_score": 16,
+    "matched_keywords": [
+      "additive manufacturing",
+      "agentic system",
+      "agentic systems",
+      "manufacturing",
+      "parameter optimization",
+      "process optimization"
+    ],
+    "first_seen": "2026-08-29T13:44:04Z",
+    "last_seen": "2026-08-29T13:44:04Z"
+  },
+  {
     "arxiv_id": "2608.24039",
     "version": "v1",
     "title": "Design-to-Plan: A Large Language Model-Based Multi-Agent Framework for Manufacturing Process Planning from 3D CAD Models and 2D Engineering Drawings",
@@ -62,7 +115,7 @@
       "reasoning"
     ],
     "first_seen": "2026-08-26T08:50:48Z",
-    "last_seen": "2026-08-26T08:50:48Z"
+    "last_seen": "2026-08-29T13:44:04Z"
   },
   {
     "arxiv_id": "2608.22606",
@@ -106,7 +159,7 @@
       "manufacturing"
     ],
     "first_seen": "2026-08-26T08:50:48Z",
-    "last_seen": "2026-08-26T08:50:48Z"
+    "last_seen": "2026-08-29T13:44:04Z"
   },
   {
     "arxiv_id": "2608.22128",
@@ -156,7 +209,7 @@
       "reasoning"
     ],
     "first_seen": "2026-08-26T08:50:48Z",
-    "last_seen": "2026-08-26T08:50:48Z"
+    "last_seen": "2026-08-29T13:44:04Z"
   },
   {
     "arxiv_id": "2608.23622",
@@ -225,7 +278,7 @@
       "tool use"
     ],
     "first_seen": "2026-08-26T08:50:48Z",
-    "last_seen": "2026-08-26T08:50:48Z"
+    "last_seen": "2026-08-29T13:44:04Z"
   },
   {
     "arxiv_id": "2605.21622",
@@ -278,7 +331,7 @@
       "multi-agent"
     ],
     "first_seen": "2026-08-26T08:50:48Z",
-    "last_seen": "2026-08-26T08:50:48Z"
+    "last_seen": "2026-08-29T13:44:04Z"
   },
   {
     "arxiv_id": "2604.16804",
