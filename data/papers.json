@@ -1,5 +1,308 @@
 [
   {
+    "arxiv_id": "2609.00604",
+    "version": "v1",
+    "title": "NeuroGraph: An AI Graph-Driven Neuro-Symbolic Framework for Explainable Threat Reasoning in Advanced Manufacturing",
+    "authors": [
+      "Padmeswari Nandiya",
+      "Ahmad Mohsin",
+      "Ahmed Ibrahim",
+      "Iqbal H. Sarker",
+      "Helge Janicke"
+    ],
+    "abstract": "The growing complexity of cyber-physical attack surfaces in advanced manufacturing has made cyber threat intelligence analysis increasingly difficult. Although large language models and retrieval-augmented generation have improved CTI workflows, text-based approaches remain vulnerable to hallucinations and provide limited support for structured reasoning over interconnected threats. Graph-based RAG reduces some of these limitations, but existing approaches often lack ontology-consistent multi-hop reasoning and transparent evidence tracing across heterogeneous cybersecurity data. This paper proposes a graph-grounded neuro-symbolic framework that integrates ontology-aware symbolic query generation, knowledge graph retrieval, and neural language generation to support accurate and explainable threat analysis across information technology and operational technology environments. The framework adopts a dual-large language model architecture: the first model translates natural-language questions into executable Cypher queries for symbolic graph retrieval, while the second generates answers strictly from the retrieved graph evidence. Experimental evaluation using publicly available cyber threat intelligence benchmarks shows consistent improvements over the published baseline in reasoning accuracy, while also reducing hallucinations, strengthening multi-hop reasoning, and improving robustness to adversarial perturbations. Runtime and explainability analyses further demonstrate that the framework maintains interactive inference performance and exposes graph-grounded reasoning artifacts that allow analysts to inspect and verify each stage of the analysis. Overall, the results highlight the potential of graph-grounded neuro-symbolic reasoning as a scalable, interpretable, and reliable approach to cyber threat intelligence for next-generation Industry 5.0 environments.",
+    "published": "2026-09-01T02:45:44Z",
+    "updated": "2026-09-01T02:45:44Z",
+    "arxiv_url": "https://arxiv.org/abs/2609.00604v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.00604v1",
+    "arxiv_primary_category": "cs.CR",
+    "arxiv_categories": [
+      "cs.CR",
+      "cs.IR"
+    ],
+    "comment": "Submission to Springer:Journal of Information Security (Peer Review)",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "knowledge_agents",
+      "manufacturing_reasoning"
+    ],
+    "ai_tags": [
+      "LLM",
+      "RAG",
+      "knowledge-graph",
+      "ontology"
+    ],
+    "manufacturing_tags": [
+      "manufacturing"
+    ],
+    "research_tags": [],
+    "primary_category": "knowledge_manufacturing_intelligence",
+    "category_score": 10,
+    "relevance_score": 14,
+    "matched_keywords": [
+      "advanced manufacturing",
+      "Industry 5.0",
+      "large language model",
+      "large language models",
+      "manufacturing",
+      "reasoning"
+    ],
+    "first_seen": "2026-09-02T12:40:11Z",
+    "last_seen": "2026-09-02T12:40:11Z"
+  },
+  {
+    "arxiv_id": "2608.31006",
+    "version": "v1",
+    "title": "From Prompt to Prototype: Towards a Frontier LLM Driven RF Engineering Workflow",
+    "authors": [
+      "Markus Heinrichs",
+      "Oscar Moschner",
+      "Simon Tewes",
+      "Volker Wienstroer",
+      "Aydin Sezgin",
+      "Rainer Kronberger"
+    ],
+    "abstract": "Agentic coding environments give a frontier large language model (LLM) direct access to a workstation's terminal, file system, and software. This work demonstrates they extend to professional RF hardware design: an active GNSS L1-band antenna - a circularly polarized patch, surface acoustic wave (SAW) prefilter, and two-stage low-noise amplifier (LNA) on one printed circuit board (PCB) - was designed, optimized, and made manufacturing-ready. The LLM agent autonomously operated CST Studio Suite, Keysight ADS, and KiCad via scripting interfaces. Engineer input was limited to the specification, trade-off decisions, and design reviews. Workflow, results, and the RF engineer's evolving role are discussed.",
+    "published": "2026-08-31T15:56:14Z",
+    "updated": "2026-08-31T15:56:14Z",
+    "arxiv_url": "https://arxiv.org/abs/2608.31006v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.31006v1",
+    "arxiv_primary_category": "eess.SY",
+    "arxiv_categories": [
+      "eess.SY"
+    ],
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_agentic_manufacturing",
+      "general_manufacturing_agents",
+      "manufacturing_reasoning"
+    ],
+    "ai_tags": [
+      "LLM",
+      "LLM-agent"
+    ],
+    "manufacturing_tags": [
+      "manufacturing"
+    ],
+    "research_tags": [],
+    "primary_category": "design_manufacturing_engineering",
+    "category_score": 5,
+    "relevance_score": 9,
+    "matched_keywords": [
+      "agent",
+      "LLM agent",
+      "manufacturing"
+    ],
+    "first_seen": "2026-09-02T12:40:11Z",
+    "last_seen": "2026-09-02T12:40:11Z"
+  },
+  {
+    "arxiv_id": "2606.13368",
+    "version": "v3",
+    "title": "IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing",
+    "authors": [
+      "Tao Hu",
+      "Jiaxin Ai",
+      "Licheng Wen",
+      "Xueheng Li",
+      "Shu Zou",
+      "Siqi Li",
+      "Nianchen Deng",
+      "Xinyu Cai",
+      "Hongbin Zhou",
+      "Pinlong Cai",
+      "Daocheng Fu",
+      "Yu Yang",
+      "Hairong Zhang",
+      "Botian Shi",
+      "Xuemeng Yang"
+    ],
+    "abstract": "Computer-Aided Design is pivotal in modern manufacturing, yet existing automated methods predominantly rely on open-loop, one-shot generation, creating a mismatch with iterative real-world practices. In this paper, we present IterCAD, a unified multimodal agent framework for closed-loop, interactive CAD generation and editing. We formulate the task as a multi-turn interaction between a multimodal agent and an executable CAD sandbox, covering three tasks: Drawing-to-Code, Text-to-Code, and Interactive Editing. To support this, we develop a data synthesis pipeline incorporating advanced industrial manufacturing features to generate standard-compliant multi-view engineering drawings, complex code-editing tasks, and high-fidelity interaction trajectories. We optimize the agent via progressive SFT followed by geometry-aware reinforcement learning with viable-prefix masking to enhance code executability and geometric fidelity. Finally, we introduce the IterCAD-Bench evaluation suite and propose the Chamfer Distance Tolerance-Recall (CD-TR) curve alongside its AUC-TR metric, establishing a survivor-bias-free standard that unifies code validity and geometric precision. Extensive experiments demonstrate that IterCAD achieves highly competitive performance across multiple benchmarks, significantly outperforming existing approaches in both code executability and geometric precision, while exhibiting superior capabilities in closed-loop iterative refinement.",
+    "published": "2026-06-11T13:53:21Z",
+    "updated": "2026-08-31T10:29:17Z",
+    "arxiv_url": "https://arxiv.org/abs/2606.13368v3",
+    "pdf_url": "https://arxiv.org/pdf/2606.13368v3",
+    "arxiv_primary_category": "cs.AI",
+    "arxiv_categories": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_agentic_manufacturing",
+      "general_manufacturing_agents"
+    ],
+    "ai_tags": [
+      "multimodal",
+      "reinforcement-learning"
+    ],
+    "manufacturing_tags": [
+      "manufacturing",
+      "CAD"
+    ],
+    "research_tags": [],
+    "primary_category": "design_manufacturing_engineering",
+    "category_score": 7,
+    "relevance_score": 11,
+    "matched_keywords": [
+      "agent",
+      "CAD",
+      "industrial manufacturing",
+      "manufacturing"
+    ],
+    "first_seen": "2026-09-02T12:40:11Z",
+    "last_seen": "2026-09-02T12:40:11Z"
+  },
+  {
+    "arxiv_id": "2608.28475",
+    "version": "v1",
+    "title": "COVER: Identifiable Evaluation of Coalition Routing",
+    "authors": [
+      "Raghul Sugumar",
+      "Amrit Gopinath"
+    ],
+    "abstract": "When a multi-agent system changes its team, it also changes the messages and final answer it produces, so an end-to-end accuracy gap does not by itself identify a routing effect. We introduce method, an evaluation contract that fixes a public information boundary, downstream stack G, and finite legal team family before outcomes are generated. Complete coverage identifies exact finite-benchmark oracle regret conditional on that stack. For any finite collection of frozen policies, executing the union of their distinct selected teams is the minimal assumption-free support for every pairwise policy contrast, though not for absolute oracle regret. Two controlled tables with source-ID-disjoint splits test the instrument. On MuSiQue-12, a pre-specified privileged positive control improves regret from 0.532 to 0.402; a later public-interface control reaches 0.424 versus 0.554 but is retrospective. On HotpotQA-4, a pre-specified public direct scorer improves regret from 0.313 to 0.110. In fixed-stack Llama execution, verified route regret improves by 0.190, while the raw-answer gain is 0.010 with an interval crossing zero. A five-family ToolSandbox variant-shift validation exhaustively evaluates 16 declared teams on 14 untouched task variants (224/224 valid rows): the declared-family oracle reaches 0.768 safe-evidence completion, while the prospectively frozen router gets 0.637 (regret 0.131), failing the predeclared 0.10 criterion. A later retrospective comparator reaches 0.655, matching all-workers with 4.57 versus 5.00 workers on average. Thus COVER exposes selection headroom without manufacturing a routing win. A crossed-stack diagnostic shows absolute scores depend on G but finds no detectable router-by-finalizer interaction. COVER is an auditable measurement methodology, not a claim of stack-invariant or universal agent-routing superiority.",
+    "published": "2026-08-28T16:01:07Z",
+    "updated": "2026-08-28T16:01:07Z",
+    "arxiv_url": "https://arxiv.org/abs/2608.28475v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.28475v1",
+    "arxiv_primary_category": "cs.AI",
+    "arxiv_categories": [
+      "cs.AI"
+    ],
+    "comment": "17 pages, 2 figures, 13 tables",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_agentic_manufacturing",
+      "general_manufacturing_agents",
+      "multi_agent_manufacturing"
+    ],
+    "ai_tags": [
+      "multi-agent"
+    ],
+    "manufacturing_tags": [
+      "manufacturing"
+    ],
+    "research_tags": [],
+    "primary_category": "production_planning_scheduling",
+    "category_score": 0,
+    "relevance_score": 9,
+    "matched_keywords": [
+      "agent",
+      "manufacturing",
+      "multi agent",
+      "multi-agent"
+    ],
+    "first_seen": "2026-09-02T12:40:11Z",
+    "last_seen": "2026-09-02T12:40:11Z"
+  },
+  {
+    "arxiv_id": "2608.28175",
+    "version": "v1",
+    "title": "Picking Bins Empty: A Hierarchical Hybrid Approach with Online Self-Learning of Grasp Points for Reliable Industrial Bin-Picking",
+    "authors": [
+      "Florian Töper",
+      "Samarth Kishor Yelvande",
+      "Jan Niklas Ewertz",
+      "Rudolph Triebel",
+      "Peter Ohlhausen"
+    ],
+    "abstract": "Bin-picking is a cornerstone of modern manufacturing, yet achieving complete bin clearance without manual intervention remains a critical challenge. While model-based methods provide high precision, they frequently suffer from deadlocks when predefined grasps are occluded or perception fails. Labor-intensive fine-tuning of grasp points is commonly required to reach a satisfactory performance for new parts. Model-free algorithms offer a more flexible alternative with \"out-of-the-box\" versatility but lack the reliability and repeatability required for production. Unlike existing work, which treats the two techniques in isolation, we propose a fourtiered hierarchical hybrid approach to combine the best of both worlds. A model-based pipeline serves as a robust backbone, while a model-free \"exploration agent\" resolves deadlock situations and discovers new grasp points. This is supported by an online self-learning mechanism that uses gripper-stroke feedback and Wilson score intervals to autonomously rank grasp candidates, reducing manual commissioning effort. Validation on three automotive parts demonstrates that our method significantly outperforms a model-free baseline in grasp success rate while improving the bin clearance rate of the model-based baseline from 50.9% to 100% across all experiments. This transition to full bin clearance marks a significant step towards truly autonomous, intervention-free industrial operation.",
+    "published": "2026-08-28T10:40:55Z",
+    "updated": "2026-08-28T10:40:55Z",
+    "arxiv_url": "https://arxiv.org/abs/2608.28175v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.28175v1",
+    "arxiv_primary_category": "cs.RO",
+    "arxiv_categories": [
+      "cs.RO"
+    ],
+    "comment": "Accepted at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026. 8 pages, 7 figures",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_manufacturing_agents"
+    ],
+    "ai_tags": [],
+    "manufacturing_tags": [
+      "manufacturing"
+    ],
+    "research_tags": [],
+    "primary_category": "production_planning_scheduling",
+    "category_score": 0,
+    "relevance_score": 9,
+    "matched_keywords": [
+      "agent",
+      "manufacturing"
+    ],
+    "first_seen": "2026-09-02T12:40:11Z",
+    "last_seen": "2026-09-02T12:40:11Z"
+  },
+  {
+    "arxiv_id": "2608.28697",
+    "version": "v1",
+    "title": "Multi-Group Pipe Routing under Permanent Geometric Occupancy: Problem, Benchmark, and Classical Baselines",
+    "authors": [
+      "Deng Quan"
+    ],
+    "abstract": "Additive manufacturing (AM) enables compact hydraulic components whose internal fluid channels can follow free-form 3D paths rather than conventionally drilled holes. A representative case is multi-group channel layout in rotary direct-drive servo valves: once a channel is placed it permanently occupies volume, so later channels must clear earlier geometry--unlike classical multi-agent pathfinding (MAPF), where agents free space after moving. We study this setting as multi-group pipe routing under permanent geometric occupancy. Our contributions are a problem formalization with geometric dual-witness conflicts, a constructive 3D benchmark (two corridor generators x two obstacle painters, controlled difficulty, feasibility witnesses), and baseline results for CBS, PBS, and priority planning adapted to this coupling. We evaluate by success rate under a fixed time budget. PlaneSlice hard instances clearly rank CBS above PBS and PP, while easier cells validate the pipeline. The goal is a reproducible problem definition, suite, and classical baselines--not a new optimal MAPF algorithm.",
+    "published": "2026-08-27T10:26:21Z",
+    "updated": "2026-08-27T10:26:21Z",
+    "arxiv_url": "https://arxiv.org/abs/2608.28697v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.28697v1",
+    "arxiv_primary_category": "cs.RO",
+    "arxiv_categories": [
+      "cs.RO"
+    ],
+    "comment": "",
+    "journal_ref": "",
+    "doi": "",
+    "code_url": "",
+    "project_url": "",
+    "matched_query_families": [
+      "general_manufacturing_agents",
+      "multi_agent_manufacturing"
+    ],
+    "ai_tags": [
+      "multi-agent"
+    ],
+    "manufacturing_tags": [
+      "manufacturing",
+      "additive-manufacturing"
+    ],
+    "research_tags": [
+      "planning"
+    ],
+    "primary_category": "production_planning_scheduling",
+    "category_score": 0,
+    "relevance_score": 9,
+    "matched_keywords": [
+      "additive manufacturing",
+      "agent",
+      "agents",
+      "manufacturing",
+      "multi agent",
+      "multi-agent"
+    ],
+    "first_seen": "2026-09-02T12:40:11Z",
+    "last_seen": "2026-09-02T12:40:11Z"
+  },
+  {
     "arxiv_id": "2608.25928",
     "version": "v1",
     "title": "AI Agentic Selective Laser Sintering Process Optimization",
@@ -50,7 +353,7 @@
       "process optimization"
     ],
     "first_seen": "2026-08-29T13:44:04Z",
-    "last_seen": "2026-08-29T13:44:04Z"
+    "last_seen": "2026-09-02T12:40:11Z"
   },
   {
     "arxiv_id": "2608.24039",
